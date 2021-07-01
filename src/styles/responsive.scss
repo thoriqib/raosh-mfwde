@@ -1,0 +1,92 @@
+@media screen and (min-width: 650px) {
+  .app-bar {
+      grid-template-columns: 1fr auto;
+      padding: 10px 36px;
+
+      .app-bar__brand h1 {
+          font-size: 1.75em;
+      }
+
+      .app-bar__menu{
+          display: none;
+          font-size: 1.75em;
+      }
+
+      .app-bar__navigation{
+          position: static;
+          width: 100%;
+
+          ul li{
+              display: inline-block;
+              list-style: none;
+              a{
+                   display: inline-block;
+                   width: 150px;
+                   text-align: center;
+                   margin: 0;
+                   list-style: none;
+              }
+          }
+      }
+  }
+
+  .restaurant {
+    grid-template-columns: auto 1fr;
+
+    .restaurant__title{
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+
+    .restaurant__overview{
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+  }
+  
+}
+ 
+@media screen and (min-width: 800px) {
+  .app-bar .app-bar__brand h1 {
+      font-size: 2em;
+  }
+}
+ 
+@media screen and (min-width: 850px) {
+  .restaurants {
+      grid-template-columns: repeat(3, 1fr);
+  }
+}
+ 
+@media screen and (min-width: 1200px) {
+  .restaurants {
+      grid-template-columns: repeat(4, 1fr);
+  }
+}
+ 
+@media screen and (min-width: 1600px) {
+  .restaurants {
+      grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #maincontent {
+    .cards {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  .list-testimoni {
+    flex-direction: column;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .restaurant__menu{
+    flex-direction: column;
+
+    .menus{
+      margin: 10px 5px;
+    }
+  }
+}
