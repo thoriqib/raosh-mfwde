@@ -71,6 +71,11 @@
 }
 
 @media screen and (max-width: 768px) {
+  .hero{
+    &::before{
+      background-image: url("/images/heros/hero-image_2-large.jpg");
+    }
+  }
   #maincontent {
     .cards {
       grid-template-columns: repeat(1, 1fr);

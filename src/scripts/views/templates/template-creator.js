@@ -44,7 +44,7 @@ const getMenus = (menus) => {
 
 const createRestaurantDetailTemplate = (restaurant) => `
   <h2 class="restaurant__title">${restaurant.name}</h2>
-  <img class="restaurant__poster lazyload" src="${CONFIG.BASE_IMAGE_URL}large/${restaurant.pictureId}" alt="${restaurant.name}" />
+  <img class="restaurant__poster lazyload" data-src="${CONFIG.BASE_IMAGE_URL}large/${restaurant.pictureId}" alt="${restaurant.name}" />
   <div class="restaurant__info">
     <h3>Information</h3>
     <h4>Name</h4>
@@ -81,7 +81,7 @@ const createRestaurantItemTemplate = (restaurant) => `
   <li class="cards_item">
     <div class="card">
       <div class="card_image">
-        <img class="lazyload" src=${CONFIG.BASE_IMAGE_URL}large/${restaurant.pictureId} alt=${restaurant.name}/>
+        <img class="lazyload" data-src=${CONFIG.BASE_IMAGE_URL}large/${restaurant.pictureId} alt=${restaurant.name}/>
       </div>
       <div class="card_content">
         <div class="card_label">
