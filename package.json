@@ -9,7 +9,8 @@
     "lint": "eslint ./src",
     "test": "karma start",
     "e2e": "codeceptjs run --steps",
-    "build-image": "node sharp.js"
+    "build-image": "node sharp.js",
+    "bundle-report": "webpack-bundle-analyzer --port 4200 dist/stats.json"
   },
   "keywords": [],
   "author": "Thoriq Ibadurrohman <thoriq312@gmail.com>",
